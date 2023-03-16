@@ -9,6 +9,7 @@ public class LevelComplete : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Application.LoadLevel(newLevelName);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
     }
 }
