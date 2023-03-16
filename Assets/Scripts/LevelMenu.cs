@@ -41,16 +41,6 @@ public class LevelMenu : MonoBehaviour
         levelMenu.enabled = false;
         SceneManager.LoadScene("LvL6");
     }
-    public void btnLvl7()
-    {
-        levelMenu.enabled = false;
-        SceneManager.LoadScene("LvL7");
-    }
-    public void btnLvl8()
-    {
-        levelMenu.enabled = false;
-        SceneManager.LoadScene("LvL8");
-    }
 
     public void btnBack()
     {

@@ -8,6 +8,7 @@ public class HeroController : MonoBehaviour
     Rigidbody2D rb;
     public float heroSpeed;
     public float jumpForce;
+    public bool isGrounded;
 
     void Start()
     {
@@ -34,10 +35,21 @@ public class HeroController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
-            anim.SetTrigger("jump");
-            rb.AddForce(Vector2.up * jumpForce , ForceMode2D.Impulse);
+            if (isGrounded == true)
+            {
+                anim.SetTrigger("jump");
+                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                isGrounded = false;
+            }
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
+    }
 
 }
