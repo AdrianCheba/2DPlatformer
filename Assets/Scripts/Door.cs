@@ -6,11 +6,6 @@ public class Door : MonoBehaviour
 {
     public Sprite openDoor;
 
-    void Start()
-    {
-        
-    }
-
     public void OpenDoor()
     {
         GetComponent<SpriteRenderer>().sprite = openDoor;

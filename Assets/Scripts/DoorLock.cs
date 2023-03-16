@@ -12,4 +12,9 @@ public class DoorLock : MonoBehaviour
         door.SendMessage("OpenDoor");
         GetComponent<SpriteRenderer>().sprite = unlocked;
     }
+
+    public void ActivateSwitch()
+    {
+        GetComponent<BoxCollider2D>().enabled = true;
+    }
 }

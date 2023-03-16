@@ -9,6 +9,7 @@ public class HeroController : MonoBehaviour
     public float heroSpeed;
     public float jumpForce;
     public bool isGrounded;
+    public GameObject backGround;
 
     void Start()
     {
@@ -42,6 +43,8 @@ public class HeroController : MonoBehaviour
                 isGrounded = false;
             }
         }
+
+        backGround.transform.position = transform.position;
     }
 
     private void OnTriggerStay2D(Collider2D collision)
