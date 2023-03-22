@@ -154,7 +154,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.4
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -678,6 +678,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d5627dab026f744883d5dd13b478043, type: 3}
+--- !u!114 &485146411 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8165657168054855700, guid: 5f181094d1e5a2f42b5b1e30d5bf00c7, type: 3}
+  m_PrefabInstance: {fileID: 4991077053894410794}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &552769772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1434,6 +1445,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73c86631aeceeb5458907340d8da58b1, type: 3}
+--- !u!1 &1172110384 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4991077052183721040, guid: 5f181094d1e5a2f42b5b1e30d5bf00c7, type: 3}
+  m_PrefabInstance: {fileID: 4991077053894410794}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1172602333
 GameObject:
   m_ObjectHideFlags: 0
@@ -3152,6 +3168,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4991077052146643232, guid: 5f181094d1e5a2f42b5b1e30d5bf00c7, type: 3}
+      propertyPath: muteBtn
+      value: 
+      objectReference: {fileID: 485146411}
+    - target: {fileID: 4991077052146643232, guid: 5f181094d1e5a2f42b5b1e30d5bf00c7, type: 3}
+      propertyPath: pauseBtn
+      value: 
+      objectReference: {fileID: 1172110384}
+    - target: {fileID: 4991077052146643232, guid: 5f181094d1e5a2f42b5b1e30d5bf00c7, type: 3}
+      propertyPath: muteBtnSprit
+      value: 
+      objectReference: {fileID: 21300000, guid: aee06d5e5a5304945a3b4f9cf96fb32b, type: 3}
+    - target: {fileID: 4991077052146643232, guid: 5f181094d1e5a2f42b5b1e30d5bf00c7, type: 3}
+      propertyPath: unMuteBtnSprit
+      value: 
+      objectReference: {fileID: 21300000, guid: 1fc393ec18537864eafb579950c17d62, type: 3}
     - target: {fileID: 4991077052146643235, guid: 5f181094d1e5a2f42b5b1e30d5bf00c7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3239,6 +3271,10 @@ PrefabInstance:
     - target: {fileID: 4991077052146643247, guid: 5f181094d1e5a2f42b5b1e30d5bf00c7, type: 3}
       propertyPath: m_Name
       value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225639698399979272, guid: 5f181094d1e5a2f42b5b1e30d5bf00c7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MuteAll
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
