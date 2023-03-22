@@ -18,7 +18,7 @@ public class EndTrigger : MonoBehaviour
         {
 
             deatEffect.Play();
-            Invoke("RestartScene", 0.2f);
+            Invoke("RestartScene", 0.15f);
            
         }
     }
