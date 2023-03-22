@@ -2133,6 +2133,87 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e2dc4e9f8e9be14481410077aa3aff5, type: 3}
+--- !u!1001 &1507079669
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1698898088883618717, guid: bb574fbfb4034b0449078cfd7f96e420, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1698898088883618717, guid: bb574fbfb4034b0449078cfd7f96e420, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068231695294494789, guid: bb574fbfb4034b0449078cfd7f96e420, type: 3}
+      propertyPath: m_RootOrder
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068231695294494789, guid: bb574fbfb4034b0449078cfd7f96e420, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068231695294494789, guid: bb574fbfb4034b0449078cfd7f96e420, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068231695294494789, guid: bb574fbfb4034b0449078cfd7f96e420, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.0325
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068231695294494789, guid: bb574fbfb4034b0449078cfd7f96e420, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068231695294494789, guid: bb574fbfb4034b0449078cfd7f96e420, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068231695294494789, guid: bb574fbfb4034b0449078cfd7f96e420, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068231695294494789, guid: bb574fbfb4034b0449078cfd7f96e420, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068231695294494789, guid: bb574fbfb4034b0449078cfd7f96e420, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068231695294494789, guid: bb574fbfb4034b0449078cfd7f96e420, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068231695294494789, guid: bb574fbfb4034b0449078cfd7f96e420, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068231695294494789, guid: bb574fbfb4034b0449078cfd7f96e420, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068231695294494789, guid: bb574fbfb4034b0449078cfd7f96e420, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068231695294494789, guid: bb574fbfb4034b0449078cfd7f96e420, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6277111495691688305, guid: bb574fbfb4034b0449078cfd7f96e420, type: 3}
+      propertyPath: m_Name
+      value: Particle System
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bb574fbfb4034b0449078cfd7f96e420, type: 3}
 --- !u!1001 &1587940310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3081,7 +3162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4991077052146643235, guid: 5f181094d1e5a2f42b5b1e30d5bf00c7, type: 3}
       propertyPath: m_RootOrder
-      value: 39
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4991077052146643235, guid: 5f181094d1e5a2f42b5b1e30d5bf00c7, type: 3}
       propertyPath: m_AnchorMax.x
