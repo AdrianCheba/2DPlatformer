@@ -12,6 +12,7 @@ public class MainMenu : MonoBehaviour
     {
         mainMenu.enabled = true;    
         levelMenu.enabled = false;
+        Time.timeScale = 1.0f;
     }
 
     public void btnPlay()

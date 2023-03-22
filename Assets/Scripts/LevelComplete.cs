@@ -5,22 +5,29 @@ using UnityEngine.SceneManagement;
 
 public class LevelComplete : MonoBehaviour
 {
-    public Canvas endMenu;
+    public GameObject endLevel;
+    public GameObject endGeme;
+    public Canvas pauseMenu;
 
     private void Start()
     {
-        endMenu.enabled = false; 
+        endLevel.SetActive(false);
+        endGeme.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (SceneManager.GetActiveScene().buildIndex < (SceneManager.sceneCountInBuildSettings - 1))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            endLevel.SetActive(true);
+            pauseMenu.enabled = false;
+            Time.timeScale = 0f;
+
         }
         else
         {
-            endMenu.enabled = true;
+            endGeme.SetActive(true);
+            pauseMenu.enabled = false;
             Time.timeScale = 0f;
         }
     }

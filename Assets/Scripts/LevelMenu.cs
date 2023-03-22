@@ -8,6 +8,11 @@ public class LevelMenu : MonoBehaviour
     public Canvas levelMenu;
     public Canvas mainMenu;
 
+    private void Start()
+    {
+        Time.timeScale= 1.0f;
+    }
+
     public void btnLvl1()
     {
         levelMenu.enabled = false;
