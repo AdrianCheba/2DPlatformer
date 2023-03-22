@@ -10,11 +10,15 @@ public class HeroController : MonoBehaviour
     public float jumpForce;
     public bool isGrounded;
     public GameObject backGround;
+    public AudioSource jumpEffect;
+    public bool isMoving;
 
     void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        backGround = GameObject.Find("BG");
+        jumpEffect = GetComponent<AudioSource>();
     }
 
 
@@ -32,6 +36,7 @@ public class HeroController : MonoBehaviour
         else if(horisontalDirection > 0)
         {
             transform.localScale = new Vector3(1f, 1f, 1f);
+
         }
 
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
@@ -39,10 +44,13 @@ public class HeroController : MonoBehaviour
             if (isGrounded == true)
             {
                 anim.SetTrigger("jump");
+                jumpEffect.Play();
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 isGrounded = false;
             }
         }
+
+       
 
         backGround.transform.position = transform.position;
     }
